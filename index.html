@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gregory Goodwin Pincus</title>
     <link rel="stylesheet" href="style.css">
+    <title>Freecodecamp survey form</title>
 </head>
 <body>
-    <main>
-        <div class="headline">
-            <h1>Gregory Goodwin Pincus</h1>
-            <p>Known for co-invented the combined oral contraceptive pill</p>
-        </div>      
-        <figure class="image">
-            <img class="image-div" src="https://media.gettyimages.com/photos/portrait-of-american-biologist-and-reproductive-physiologist-dr-picture-id1308701682?k=6&m=1308701682&s=612x612&w=0&h=JRm_tac6Fc36xQWIFAU0xtSA0eiEeyo-UPz8Jwvgr2w=" alt="co-invented the combined oral contraceptive pill">
-            <figcaption>
-                Gregory Goodwin Pincus was an American biologist and researcher who co-invented the combined oral contraceptive pill.
-            </figcaption>
-        </figure>
-        <section>
-            <h3>Time line of Gregory Goodwin Pincus </h3>
-            <ul class="items">
-                <li> <strong> Gregory Goodwin Pincus</strong> <time> (April 9, 1903 – August 22, 1967)</time> was an American biologist and researcher who co-invented the combined oral contraceptive pill.[1]</li>
-                <li> <strong>Research </strong>Dr. Pincus began studying hormonal biology and steroidal hormones early in his career. He was interested in the way that hormones affected mammals' reproductive systems. His first breakthrough came early, when he was able to produce in vitro fertilization in rabbits in 1934. In 1936, he published his discoveries after his experiments.</li>
-                <li> <strong>Personal life </strong>Pincus married Elizabeth Notkin (1900-1988) in 1924 and they had three children together.</li>
-                <li> <strong>Awards</strong>Pincus was the recipient of numerous awards. Some of these awards include the Oliver Bird Prize in 1960, the Julius A. Koch Award in 1962, the Cameron Prize for Therapeutics of the University of Edinburgh in 1966, and the American Medical Association's Scientific Achievement Award in 1967</li>
-                <li> <strong>Death</strong>He died in 1967 of myeloid metaplasia, a rare blood disease, in Boston, Massachusetts. He was 64 years old and lived in Northborough, Massachusetts. His funeral was held August 25, 1967 at Temple Emanuel in Worcester, Massachusetts</li>
-                <li> <strong>Lasting Impact</strong>Pincus' birth control pill changed family life because it allowed women to plan when they had children. The birth control pill helped pave the way for women's liberation and the Sexual Revolution</li>
-            </ul>
-            <blockquote cite="http://constructionlitmag.com/culture/gregory-pincus-and-one-little-pill-that-saved-the-world/">
-                <p>It’s coming home to roost over the next 50 years or so. It’s not just climate change; it’s sheer space, places to grow food for this enormous horde. Either we limit our population growth or the natural world will do it for us.</p>
-                 <cite>-- David Attenborough</cite>
-            </blockquote>
-            <h3 class="link"> <i> For More information you can check </i> <a href="https://en.wikipedia.org/wiki/Gregory_Goodwin_Pincus">Wikipedia.</a></h3>
-        </section>
-    </main>
+    <div class="container">
+        <header>
+            <h1 id="title">EDA-corp survey form</h1>
+            <p id="description">Thank you so much for your time and helping us to improve our service</p>
+        </header>  
+        <div class="form-body">
+            <form id="survey-form">
+                <div>
+                    <label id="name-label" for="name" class="form-data">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                 <div>
+                    <label id="email-label" for="name" class="form-data">Email</label>
+                    <input type="email" name="email" id="eamil" class="form-control" placeholder="Enter your Email" required>
+                </div>
+                 <div>
+                    <label id="age-label" for="age" class="form-data">Age <span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="age" class="form-control" placeholder="Enter your age" required>
+                </div>
+                <div class="">
+                    <p>Which option best describe your current role</p>
+                    <select name="role" id="dropdown" class="option-role" required>
+                        <option disabled selected value id="sl-first">Select current role</option>
+                        <option value="student">student</option>
+                        <option value="job">full-time job</option>
+                        <option value="job">part-time job</option>
+                        <option value="learner">full-time learner</option>
+                        <option value="pereferNo">prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="brand">
+                    <p>would you recomend our brand to your freind?</p>
+                    <label>
+                        <input type="radio" name="user-recomended" value="definitely" class="input-radio" checked>Definitly
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomended" value="Maybe">Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomended" value="Not sure">Not sure
+                    </label>
+                </div>  
+                <div>
+                    <p>What is your favorite items in our company?</p>
+                    <select name="choice" id="dropdown">
+                        <option disabled selected value id="sl-first">selet an option</option>
+                        <option value="burger">Burger</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="cola">cola</option>
+                        <option value="chicken">Chicken leg</option>
+                    </select>
+                </div>  
+                <div class="check-box">
+                    <p>What would you like to improved? <span class="clue">Check all apply</span> </p>
+                    <div class="sub-box">
+                        <label>
+                            <input type="checkbox" name="prefer" value="decoration">Decoraiton
+                        </label> 
+                        <label>   
+                            <input type="checkbox" name="prefer" value="enviroment">Enviroment
+                        </label>
+                        <label>    
+                            <input type="checkbox" name="prefer" value="lighting">Lighting
+                        </label>  
+                        <label>  
+                            <input type="checkbox" name="prefer" value="service">service
+                        </label>
+                        <label>   
+                            <input type="checkbox" name="prefer" value="place">Place
+                        </label>
+                    </div>
+                </div>            
+                <div class="comment-box">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your valuable comment here..">
+                    </textarea>
+                </div>
+                <div class="btn-submit">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
